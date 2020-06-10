@@ -3,17 +3,34 @@
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
         <title>Technical presentation</title>
+    
+    
+        <!-- Unity-Drone -->
+        <link rel="shortcut icon" href="Drone/TemplateData/favicon.ico">
+        <link rel="stylesheet" href="Drone/TemplateData/style.css">
+        <script src="Drone/TemplateData/UnityProgress.js"></script>
+        <script src="Drone/Build/UnityLoader.js"></script>
+        <script>
+        var unityInstance = UnityLoader.instantiate("unityContainer", "Drone/Build/webGl.json", {onProgress: UnityProgress});
+        </script>
+        <!-- End Drone -->
+    
     </head>
     <body>
         <div class="container">
             <div class="row">
                 <div class="col-sm">
-                    Game 1
+                    <div class="webgl-content">
+                        <div id="unityContainer" style="width: 960px; height: 600px"></div>
+                        <div class="footer">
+                          <div class="webgl-logo"></div>
+                          <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+                          <div class="title">Drone2</div>
+                        </div>
+                      </div>
                 </div>
                 <div class="col-sm">
                     Game 2
