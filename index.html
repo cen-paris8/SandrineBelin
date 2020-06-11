@@ -70,7 +70,7 @@
                 <div class="row">
                     <!-- Portfolio Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#droneModal">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#droneModal" data-href="./modal/drone.html">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
@@ -83,7 +83,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="" />
+                            <img class="img-fluid" src="assets/img/portfolio/dungeon.PNG" alt="" />
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
@@ -92,7 +92,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="" />
+                            <img class="img-fluid" src="assets/img/portfolio/textadventuregame.PNG" alt="" />
                         </div>
                     </div>
                     <!-- Portfolio Item 4-->
@@ -101,7 +101,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt="" />
+                            <img class="img-fluid" src="assets/img/portfolio/desinfox.png" alt="" />
                         </div>
                     </div>
                     <!-- Portfolio Item 5-->
@@ -110,7 +110,34 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="" />
+                            <img class="img-fluid" src="assets/img/portfolio/tower.png" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4  mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/tank.png" alt="" />
+                        </div>
+                    </div>
+                     <!-- Portfolio Item 7-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/obser.png" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/tally.png" alt="" />
                         </div>
                     </div>
                     <!-- Portfolio Item 6-->
@@ -119,7 +146,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="" />
+                            <img class="img-fluid" src="assets/img/portfolio/margot.png" alt="" />
                         </div>
                     </div>
                 </div>
@@ -254,11 +281,14 @@
                 </div>
             </div>
         </div> -->
-
+<!-- Modal Drone -->
         <div class="modal fade" id="droneModal" tabindex="-1" role="dialog" aria-labelledby="droneModal" aria-hidden="true">
             <div class="modal-dialog" role="document" style="width: 900px; margin-left:20%">
-              <div class="modal-content" style="width: 900px;">
-                <div class="modal-header">
+              <div class="modal-content"  id="droneModalContent" style="width: 900px;">
+                            <!--#include file="modal/drone.html"-->
+
+
+          <!--      <div class="modal-header">
                   <h5 class="modal-title" id="droneModal">Drone</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
@@ -275,10 +305,12 @@
                  <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                   <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-            </div>
+                </div>-->
+            </div> 
         </div>
       </div>
+
+     <!-- End Modal Drone -->
 
         <!-- Portfolio Modal 2-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
@@ -426,7 +458,11 @@
             </div>
         </div>
         <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        $(window).ready(function() {
+            $("#droneModalContent").load("/modal/drone.html");
+        });
+        </script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
@@ -435,5 +471,6 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        
     </body>
 </html>
