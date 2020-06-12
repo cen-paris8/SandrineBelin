@@ -25,6 +25,14 @@
         var unityInstance = UnityLoader.instantiate("unityContainerDrone", "Drone/Build/webGl.json", {onProgress: UnityProgress});
         </script> 
         <!-- End Drone Modal-->
+
+        <link rel="shortcut icon" href="dungeon/TemplateData/favicon.ico">
+        <link rel="stylesheet" href="dungeon/TemplateData/style.css">
+        <script src="dungeon/TemplateData/UnityProgress.js"></script>
+        <script src="Build/UnityLoader.js"></script>
+        <script>
+        var gameInstance = UnityLoader.instantiate("gameContainerDungeon", "dungeon/Build/DungeonEscapeWebgl.json", {onProgress: UnityProgress});
+        </script>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -55,11 +63,6 @@
                 <p class="masthead-subheading font-weight-light mb-0">Unity 3D - C# - React</p>
             </div>
         </header>
-
-        <!--include virtual="test.html"-->
-        <!--#include virtual="test.html"-->
-        <!--#include file="test.html"-->
-        <!--include file="test.html"-->
 
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
@@ -326,11 +329,11 @@
                 </div>
                 <div class="modal-body" style="width: 900px; height: 650px">
                     <div class="webgl-content">
-                        <div id="unityContainerDungeon" style="width: 900px; height: 600px"></div>
+                        <div id="gameContainerDungeon" style="width: 960px; height: 600px"></div>
                         <div class="footer">
-                          <div class="webgl-logo"></div>
+                            <div class="webgl-logo"></div>
                         </div>
-                      </div>
+                    </div>
                 </div>
                  <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
