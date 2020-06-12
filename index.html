@@ -17,22 +17,51 @@
         <link href="css/styles.css" rel="stylesheet" />
 
         <!--Drone Modal-->
-        <link rel="shortcut icon" href="Drone/TemplateData/favicon.ico">
-        <link rel="stylesheet" href="Drone/TemplateData/style.css">
-        <script src="Drone/TemplateData/UnityProgress.js"></script>
-        <script src="Drone/Build/UnityLoader.js"></script>
+        <link rel="shortcut icon" href="game/drone/TemplateData/favicon.ico">
+        <link rel="stylesheet" href="game/drone/TemplateData/style.css">
+        <script src="game/drone/TemplateData/UnityProgress.js"></script>
+        <script src="game/drone/Build/UnityLoader.js"></script>
         <script>
-        var unityInstance = UnityLoader.instantiate("unityContainerDrone", "Drone/Build/webGl.json", {onProgress: UnityProgress});
+        var unityInstance = UnityLoader.instantiate("unityContainerDrone", "game/drone/Build/webGl.json", {onProgress: UnityProgress});
         </script> 
         <!-- End Drone Modal-->
-
-        <link rel="shortcut icon" href="dungeon/TemplateData/favicon.ico">
-        <link rel="stylesheet" href="dungeon/TemplateData/style.css">
-        <script src="dungeon/TemplateData/UnityProgress.js"></script>
-        <script src="Build/UnityLoader.js"></script>
+        <!--Dungeon Modal-->
+        <link rel="shortcut icon" href="game/dungeon/TemplateData/favicon.ico">
+        <link rel="stylesheet" href="game/dungeon/TemplateData/style.css">
+        <script src="game/dungeon/TemplateData/UnityProgress.js"></script>
+        <script src="game/dungeon/Build/UnityLoader.js"></script>
         <script>
-        var gameInstance = UnityLoader.instantiate("gameContainerDungeon", "dungeon/Build/DungeonEscapeWebgl.json", {onProgress: UnityProgress});
+        var gameInstance = UnityLoader.instantiate("gameContainerDungeon", "game/dungeon/Build/DungeonEscapeWebgl.json", {onProgress: UnityProgress});
         </script>
+        <!--End dungeon Modal-->
+        <!--TextAdventure game Modal-->
+        <link rel="shortcut icon" href="game/textAd/TemplateData/favicon.ico">
+        <link rel="stylesheet" href="game/textAdTemplateData/style.css">
+        <script src="game/textAd/TemplateData/UnityProgress.js"></script>
+        <script src="game/textAd/Build/UnityLoader.js"></script>
+        <script>
+        var gameInstance = UnityLoader.instantiate("gameContainerTextAd", "game/textAd/Build/webgl.json", {onProgress: UnityProgress});
+        </script>
+        <!--End Text game Modal-->
+        <!--Desinfox Game Modal-->
+        <!--End Desinfox Game Modal-->
+        <!--Tower Defense Game Modal-->
+        <!--End Tower Defnse Game Modal-->
+        <!--Tank Game Modal-->
+        <link rel="shortcut icon" href="game/tank/TemplateData/favicon.ico">
+        <link rel="stylesheet" href="game/tank/TemplateData/style.css">
+        <script src="game/tank/TemplateData/UnityProgress.js"></script>
+        <script src="game/tank/Build/UnityLoader.js"></script>
+        <script>
+        var gameInstance = UnityLoader.instantiate("gameContainertank", "game/tank/Build/gh-pages.json", {onProgress: UnityProgress});
+        </script>
+        <!--End Tank Game Modal-->
+        <!--Observatoire Game Modal-->
+        <!--End Observatoire Game Modal-->
+        <!--Tally Game Modal-->
+        <!--End Tally Game Modal-->
+        <!--Margot Game Modal-->
+        <!--End Margot Game Modal-->
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -97,7 +126,7 @@
                     </div>
                     <!-- Portfolio Item 3-->
                     <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#textAdModal">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
@@ -124,7 +153,7 @@
                     </div>
                     <!-- Portfolio Item 6-->
                     <div class="col-md-6 col-lg-4  mb-5">
-                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#tankModal">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
@@ -341,6 +370,60 @@
             </div> 
         </div>
       </div>
+    <!--TextAdventure game Modal 3-->
+    <div class="modal fade" id="textAdModal" tabindex="-1" role="dialog" aria-labelledby="textAdModal" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="width: 900px; margin-left:20%">
+          <div class="modal-content"  id="textAdModalContent" style="width: 900px;">
+            <div class="modal-header">
+              <h5 class="modal-title" id="textAdModal">Drone</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="width: 900px; height: 650px">
+                <div class="webgl-content">
+                    <div id="gameContainerTextAd" style="width: 960px; height: 600px"></div>
+                    <div class="footer">
+                        <div class="webgl-logo"></div>
+                    </div>
+                </div>
+            </div>
+             <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div> 
+    </div>
+  </div>
+    <!--Desinfox Game Modal 4-->
+    <!--Tower Defense Game Modal 5-->
+    <!--Tank Game Modal 6--> 
+    <div class="modal fade" id="tankModal" tabindex="-1" role="dialog" aria-labelledby="tankModal" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="width: 900px; margin-left:20%">
+          <div class="modal-content"  id="tankModalContent" style="width: 900px;">
+            <div class="modal-header">
+              <h5 class="modal-title" id="tankModal">Drone</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" style="width: 900px; height: 650px">
+                <div class="webgl-content">
+                    <div id="gameContainertank" style="width: 960px; height: 600px"></div>
+                    <div class="footer">
+                        <div class="webgl-logo"></div>
+                    </div>
+                </div>
+            </div>
+             <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div> 
+    </div>
+  </div>
+    <!--Observatoire Game Modal 7-->
+    <!--Tally Game Modal 8-->
+    <!--Margot Game Modal 9-->
+
         <!-- Portfolio Modal 3-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
             <div class="modal-dialog modal-xl" role="document">
