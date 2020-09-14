@@ -19,13 +19,14 @@
     <link href="css/styles.css" rel="stylesheet" />
 
     <!--Drone Modal-->
-    <link rel="shortcut icon" href="game/drone/TemplateData/favicon.ico">
+    <!-- <link rel="shortcut icon" href="game/drone/TemplateData/favicon.ico">
     <link rel="stylesheet" href="game/drone/TemplateData/style.css">
     <script src="game/drone/TemplateData/UnityProgress.js"></script>
     <script src="game/drone/Build/UnityLoader.js"></script>
     <script>
         var unityInstance = UnityLoader.instantiate("unityContainerDrone", "game/drone/Build/webGl.json", { onProgress: UnityProgress });
-    </script>
+    </script> -->
+    <script src="game/drone/indexLoader.js"></script>
     <!-- End Drone Modal-->
     <!--Dungeon Modal-->
     <link rel="shortcut icon" href="game/dungeon/TemplateData/favicon.ico">
@@ -355,6 +356,46 @@
     <div class="modal fade" id="droneModal" tabindex="-1" role="dialog" aria-labelledby="droneModal" aria-hidden="true">
         <div class="modal-dialog" role="document" style="width: 900px; margin-left:20%">
             <div class="modal-content" id="droneModalContent" style="width: 900px;">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="droneModal">Drone
+                        <a href="https://github.com/cen-paris8/unity-Drone" target="_blank">
+                            <img src="assets/img/portfolio/GitHub-Mark.png" />
+                        </a>
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body" style="width: 900px; height: 650px"></div>
+                
+                            <div id="unity-container" class="unity-desktop">
+                                <canvas id="unity-canvas"></canvas>
+                                <div id="unity-loading-bar">
+                                <div id="unity-logo"></div>
+                                <div id="unity-progress-bar-empty">
+                                    <div id="unity-progress-bar-full"></div>
+                                </div>
+                                </div>
+                                <div id="unity-footer">
+                                    <div id="unity-webgl-logo"></div>
+                                    <div id="unity-fullscreen-button"></div>
+                                    <div id="unity-build-title">Drone2</div>
+                                  </div>
+                            </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+            
+    <!-- <div class="modal fade" id="droneModal" tabindex="-1" role="dialog" aria-labelledby="droneModal" aria-hidden="true">
+        <div class="modal-dialog" role="document" style="width: 900px; margin-left:20%">
+            <div class="modal-content" id="droneModalContent" style="width: 900px;">
                 <div class="modal-header">
                     <h5 class="modal-title" id="droneModal">Drone
                         <a href="https://github.com/cen-paris8/unity-Drone" target="_blank">
@@ -378,7 +419,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Dungeon Portfolio Modal 2-->
     <div class="modal fade" id="dungeonModal" tabindex="-1" role="dialog" aria-labelledby="dungeonModal"
         aria-hidden="true">
