@@ -26,7 +26,7 @@
     <script>
         var unityInstance = UnityLoader.instantiate("unityContainerDrone", "game/drone/Build/webGl.json", { onProgress: UnityProgress });
     </script> -->
-    <script src="game/drone/indexLoader.js"></script>
+    <!-- <script src="game/drone/indexLoader.js"></script> -->
     <!-- End Drone Modal-->
     <!--Dungeon Modal-->
     <link rel="shortcut icon" href="game/dungeon/TemplateData/favicon.ico">
@@ -47,13 +47,13 @@
     </script>
     <!--End Text game Modal-->
     <!--Tank Game Modal-->
-    <link rel="shortcut icon" href="game/tank/TemplateData/favicon.ico">
+    <!-- <link rel="shortcut icon" href="game/tank/TemplateData/favicon.ico">
     <link rel="stylesheet" href="game/tank/TemplateData/style.css">
     <script src="game/tank/TemplateData/UnityProgress.js"></script>
     <script src="game/tank/Build/UnityLoader.js"></script>
     <script>
         var gameInstance = UnityLoader.instantiate("gameContainertank", "game/tank/Build/gh-pages.json", { onProgress: UnityProgress });
-    </script>
+    </script> -->
     <!--End Tank Game Modal-->
 </head>
 
@@ -109,13 +109,16 @@
             <div class="row">
                 <!-- Portfolio Item 1-->
                 <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#droneModal"
-                        data-href="./modal/drone.html">
+                    <div class="portfolio-item mx-auto" 
+                        data-href=""> 
+                        <!-- data-toggle="modal" data-target="#droneModal" -->
                         <div
                             class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white">
+                                <a href="https://cen-paris8.github.io/unity-Drone-webGl/" target="_blank" style="text-decoration: none;">
                                 <h2 class="text-center text-uppercase text-white mb-0">IA - State Machine
                                     <hr /> Unity 3D/ C#</h2>
+                                </a>
                                 <!-- <i class="fas fa-plus fa-3x"></i> -->
                             </div>
                         </div>
@@ -180,8 +183,11 @@
                         <div
                             class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                             <div class="portfolio-item-caption-content text-center text-white">
+                                <a href="https://cen-paris8.github.io/unity-tanks/gh-pages/" target="_blank" style="text-decoration: none;">
+                               
                                 <h2 class="text-center text-uppercase text-white mb-0">Multiplayer Game
                                     <hr /> Unity 3D/ C#</h2>
+                                    </a>
                             </div>
                         </div>
                         <img class="img-fluid" src="assets/img/portfolio/tank.PNG" alt="" />
@@ -352,48 +358,8 @@
         <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i
                 class="fa fa-chevron-up"></i></a>
     </div>
-    <!-- Modal Drone Portfolio Modal 1-->
+    <!-- Modal Drone Portfolio Modal 1-->           
     <div class="modal fade" id="droneModal" tabindex="-1" role="dialog" aria-labelledby="droneModal" aria-hidden="true">
-        <div class="modal-dialog" role="document" style="width: 900px; margin-left:20%">
-            <div class="modal-content" id="droneModalContent" style="width: 900px;">
-
-                <div class="modal-header">
-                    <h5 class="modal-title" id="droneModal">Drone
-                        <a href="https://github.com/cen-paris8/unity-Drone" target="_blank">
-                            <img src="assets/img/portfolio/GitHub-Mark.png" />
-                        </a>
-                    </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-
-                <div class="modal-body" style="width: 900px; height: 650px"></div>
-                
-                            <div id="unity-container" class="unity-desktop">
-                                <canvas id="unity-canvas"></canvas>
-                                <div id="unity-loading-bar">
-                                <div id="unity-logo"></div>
-                                <div id="unity-progress-bar-empty">
-                                    <div id="unity-progress-bar-full"></div>
-                                </div>
-                                </div>
-                                <div id="unity-footer">
-                                    <div id="unity-webgl-logo"></div>
-                                    <div id="unity-fullscreen-button"></div>
-                                    <div id="unity-build-title">Drone2</div>
-                                  </div>
-                            </div>
-                </div>
-
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-            
-    <!-- <div class="modal fade" id="droneModal" tabindex="-1" role="dialog" aria-labelledby="droneModal" aria-hidden="true">
         <div class="modal-dialog" role="document" style="width: 900px; margin-left:20%">
             <div class="modal-content" id="droneModalContent" style="width: 900px;">
                 <div class="modal-header">
@@ -419,7 +385,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- Dungeon Portfolio Modal 2-->
     <div class="modal fade" id="dungeonModal" tabindex="-1" role="dialog" aria-labelledby="dungeonModal"
         aria-hidden="true">
